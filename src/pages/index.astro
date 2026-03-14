@@ -1,17 +1,68 @@
 ---
-
+import "../styles/global.css";
+import Weblayout from "../layouts/Weblayout.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Astro</title>
+    </head>
+    <body>
+        <Weblayout>
+            <h1 class="text-5xl">
+                <a href="https://meharwan.xyz"> meharwan.xyz </a>
+            </h1>
+            <br />
+            <br />
+            <div class="flex gap-2">
+                <h2 class="text-xl">Science Student</h2>
+                <span class="font-extrabold">·</span>
+                <h2 class="text-xl">Programmer</h2>
+            </div>
+
+            <br />
+
+            <div class="flex gap-2">
+                <h2 class="text-xl font-semibold underline underline-offset-4">
+                    <a href="https://github.com/meharwanfr">github</a>
+                </h2>
+                <span class="font-extrabold">·</span>
+                <h2 class="text-xl font-semibold underline underline-offset-4">
+                    <a href="https://x.com/meharwanfr">x/twitter</a>
+                </h2>
+            </div>
+
+            <h2 class="mt-5 font-bold text-3xl">→ Blogs</h2>
+
+            <br />
+            <ul>
+                <li class="text-xl mb-4 font-semibold">
+                    <p class="flex items-center justify-between">
+                        <a
+                            class="underline underline-offset-4"
+                            href="md/template"
+                        >
+                            template post
+                        </a>
+
+                        2026-03-12 21:06
+                    </p>
+
+                    <br />
+                    <!-- <hr class="w-2/3"> -->
+                </li>
+            </ul>
+        </Weblayout>
+    </body>
 </html>
